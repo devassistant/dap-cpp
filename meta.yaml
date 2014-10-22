@@ -1,0 +1,17 @@
+package_name: cpp
+version: 0.10.0dev
+license: GPLv2+
+authors:
+  - Jonathan Wakely <jwakely@redhat.com>
+  - Petr Hracek <phracek@redhat.com>
+  - Bohuslav Kabrda <bkabrda@redhat.com>
+  - Jaromír Končický <jkoncick@redhat.com>
+homepage: https://github.com/devassistant/dap-cpp
+summary: C++ assistants
+bugreports: https://github.com/devassistant/dap-cpp/issues
+dependencies:
+  - common_args
+  - eclipse
+  - vim
+description: |
+    Kickstarts new C++ projects
