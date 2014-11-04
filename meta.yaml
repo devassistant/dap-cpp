@@ -12,6 +12,7 @@ bugreports: https://github.com/devassistant/dap-cpp/issues
 dependencies:
   - common_args
   - eclipse
+  - git
   - vim
 description: |
     Kickstarts new C++ projects

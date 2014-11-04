@@ -61,7 +61,7 @@ run:
     - $clemail2~: $(uname -n)
     - $clemail~: "$clemail1@$clemail1"
   - cl: sed -i "s|Fri Mar 15 2013 UserName <user@host>|$cldate $clname <$clemail>|" "$basename.spec"
-  - use: git_init_add_commit.run
+  - use: git.init_add_commit.run
 - else:
   - cl: cd "$lowername"
   - log_i: 'Project already exists'  
