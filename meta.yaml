@@ -1,5 +1,5 @@
 package_name: cpp
-version: 0.10.0
+version: 0.11
 license: GPLv2+
 authors:
   - Jonathan Wakely <jwakely@redhat.com>
