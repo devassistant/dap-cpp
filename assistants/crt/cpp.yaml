@@ -57,9 +57,9 @@ run:
     - $clname~: $(python -c 'import pwd,posix; print pwd.getpwuid(posix.getuid()).pw_gecos')
   - $clemail~: $(git config user.email)
   - if not $clemail:
-    - $clemail1~: $(id -un)
-    - $clemail2~: $(uname -n)
-    - $clemail~: "$clemail1@$clemail1"
+    - $user~: $(id -un)
+    - $host~: $(uname -n)
+    - $clemail~: $(echo "$user@$host")
   - cl: sed -i "s|Fri Mar 15 2013 UserName <user@host>|$cldate $clname <$clemail>|" "$basename.spec"
   - use: git.init_add_commit.run
 - else:
